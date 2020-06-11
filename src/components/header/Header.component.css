@@ -1,0 +1,12 @@
+.page-header {
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+.page-header .ant-page-header-heading-extra {
+  margin-right: 70px;
+}
+.header-inner-first-section {
+  padding-left: 24px;
+}
