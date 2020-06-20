@@ -1,21 +1,38 @@
 import React from "react";
 import "./Header.component.css";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
-import { Layout } from "antd";
+import { Layout, Row, Col } from "antd";
+import Search from "../../components/search/Search.component";
+
 const { Header } = Layout;
 
 const PageHeader: React.FC<any> = (props: any) => {
-  console.log("current props value===>hello", props.collapsed);
   return (
     <>
-      <Header className="site-layout-background" style={{ padding: 0 }}>
-        {React.createElement(
-          props.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-          {
-            className: "trigger",
-            onClick: props.toggle
-          }
-        )}
+      <Header
+        className="site-layout-background page-header"
+        style={{ padding: 0 }}
+      >
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+          <Col className="gutter-row" span={12}>
+            <Col className="gutter-row" span={6}>
+              <a className="trigger" onClick={props.toggle} href="#">
+                {props.collapsed ? (
+                  <MenuUnfoldOutlined />
+                ) : (
+                  <MenuFoldOutlined />
+                )}
+              </a>
+            </Col>
+          </Col>
+          <Col className="gutter-row" span={12}>
+            <ul className="header-right-section">
+              <li>
+                <Search />
+              </li>
+            </ul>
+          </Col>
+        </Row>
       </Header>
     </>
   );

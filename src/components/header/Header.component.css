@@ -19,3 +19,13 @@
 .site-layout .site-layout-background {
   background: #fff;
 }
+.page-header{
+  margin: 15px;
+}
+.header-right-section{
+  float: right;
+  margin-right: 50px;
+}
+ul.header-right-section li{
+  list-style: none;
+}

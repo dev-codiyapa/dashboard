@@ -1,0 +1,9 @@
+.search-modal .ant-modal-body {
+  padding: 0px;
+}
+.search-modal .ant-input-affix-wrapper > input.ant-input {
+  padding: 5px;
+}
+.search-box .ant-input {
+  font-size: 16px;
+}
