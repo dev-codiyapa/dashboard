@@ -3,6 +3,7 @@ import "./Header.component.css";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import { Layout, Row, Col } from "antd";
 import Search from "../../components/search/Search.component";
+import Profile from "../../components/profile/Profile.component";
 
 const { Header } = Layout;
 
@@ -30,6 +31,7 @@ const PageHeader: React.FC<any> = (props: any) => {
               <li>
                 <Search />
               </li>
+              <li><Profile /></li>
             </ul>
           </Col>
         </Row>

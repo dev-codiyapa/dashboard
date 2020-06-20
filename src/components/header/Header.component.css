@@ -28,4 +28,6 @@
 }
 ul.header-right-section li{
   list-style: none;
+  display: inline;
+  padding-left: 20px;
 }
