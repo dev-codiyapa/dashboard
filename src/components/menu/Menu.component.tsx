@@ -7,22 +7,17 @@ import {
 } from "@ant-design/icons";
 import "./Menu.component.css";
 
-const {Sider} = Layout;
+const { Sider } = Layout;
 
 class SieBarMenu extends React.Component<any> {
-  state = {
-    collapsed: false
-  };
-
-  toggle = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-
+  constructor(props: any) {
+    super(props);
+    this.state = {};
+  }
   render() {
+    console.log("current props values", this.props.collapsed);
     return (
-      <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
+      <Sider trigger={null} collapsible collapsed={this.props.collapsed}>
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1" icon={<UserOutlined />}>

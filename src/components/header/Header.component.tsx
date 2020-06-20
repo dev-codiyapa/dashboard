@@ -4,30 +4,21 @@ import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import { Layout } from "antd";
 const { Header } = Layout;
 
-class PageHeader extends React.Component<any> {
-  state = {
-    collapsed: false
-  };
-  toggle = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-  render() {
-    return (
-      <>
-        <Header className="site-layout-background" style={{ padding: 0 }}>
-          {React.createElement(
-            this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: this.toggle
-            }
-          )}
-        </Header>
-      </>
-    );
-  }
-}
+const PageHeader: React.FC<any> = (props: any) => {
+  console.log("current props value===>hello", props.collapsed);
+  return (
+    <>
+      <Header className="site-layout-background" style={{ padding: 0 }}>
+        {React.createElement(
+          props.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+          {
+            className: "trigger",
+            onClick: props.toggle
+          }
+        )}
+      </Header>
+    </>
+  );
+};
 
 export default PageHeader;
