@@ -1,45 +1,42 @@
 import React from "react";
-import { Menu } from "antd";
+import { Menu, Layout } from "antd";
 import {
-  DesktopOutlined,
-  ContainerOutlined,
-  BankOutlined
+  UserOutlined,
+  VideoCameraOutlined,
+  UploadOutlined
 } from "@ant-design/icons";
-import "antd/dist/antd.css";
 import "./Menu.component.css";
 
-const SieBarMenu: React.FC<any> = () => {
-  return (
-    <>
-      <div>
-        <a>
-          <img
-            src={require("../../static/images/logo.png")}
-            alt="logo"
-            className="logo"
-          />
-        </a>
-        <Menu
-          defaultSelectedKeys={["1"]}
-          defaultOpenKeys={["sub1"]}
-          mode="inline"
-          theme="dark"
-          inlineCollapsed={true}
-          className="side-bar-menu"
-        >
-          <Menu.Item key="1" icon={<BankOutlined />}>
-            Option 1
+const {Sider} = Layout;
+
+class SieBarMenu extends React.Component<any> {
+  state = {
+    collapsed: false
+  };
+
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  };
+
+  render() {
+    return (
+      <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
+        <div className="logo" />
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu.Item key="1" icon={<UserOutlined />}>
+            nav 1
           </Menu.Item>
-          <Menu.Item key="2" icon={<DesktopOutlined />}>
-            Option 2
+          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+            nav 2
           </Menu.Item>
-          <Menu.Item key="3" icon={<ContainerOutlined />}>
-            Option 3
+          <Menu.Item key="3" icon={<UploadOutlined />}>
+            nav 3
           </Menu.Item>
         </Menu>
-      </div>
-    </>
-  );
-};
-
+      </Sider>
+    );
+  }
+}
 export default SieBarMenu;

@@ -1,28 +1,33 @@
 import React from "react";
-import { Row, PageHeader, Button } from "antd";
 import "./Header.component.css";
-import Search from "../search/Search.component";
-import Profile from "../profile/Profile.component";
-import { PlusCircleOutlined } from "@ant-design/icons";
-import SubHeader from "./SubHeader.component";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
+import { Layout } from "antd";
+const { Header } = Layout;
 
-class Header extends React.Component<any> {
+class PageHeader extends React.Component<any> {
+  state = {
+    collapsed: false
+  };
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  };
   render() {
     return (
       <>
-        <div className="page-header">
-          <PageHeader
-            ghost={false}
-            title="CBSE: GRAD-5 Maths - Algebra"
-            extra={[<Search />, <PlusCircleOutlined />, <Profile />]}
-          />
-          <div className="header-inner-first-section">
-            <SubHeader />
-          </div>
-        </div>
+        <Header className="site-layout-background" style={{ padding: 0 }}>
+          {React.createElement(
+            this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+            {
+              className: "trigger",
+              onClick: this.toggle
+            }
+          )}
+        </Header>
       </>
     );
   }
 }
 
-export default Header;
+export default PageHeader;
