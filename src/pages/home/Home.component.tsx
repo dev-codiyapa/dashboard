@@ -5,8 +5,9 @@ import { Layout } from "antd";
 import PageHeader from "../../components/header/Header.component";
 import "./Home.component.css";
 import Summary from "../../components/covid/summary/Summary.component";
+import PageFooter from "../../components/Footer/Footer.component";
 
-const { Content } = Layout;
+const { Content, Footer } = Layout;
 class Home extends Component<IHomeprops, IHomestate> {
   state = {
     collapsed: false
@@ -35,6 +36,7 @@ class Home extends Component<IHomeprops, IHomestate> {
             >
               <Summary />
             </Content>
+            <PageFooter />
           </Layout>
         </Layout>
       </>
