@@ -4,6 +4,7 @@ import SieBarMenu from "../../components/menu/Menu.component";
 import { Layout } from "antd";
 import PageHeader from "../../components/header/Header.component";
 import "./Home.component.css";
+import Summary from "../../components/covid/summary/Summary.component";
 
 const { Content } = Layout;
 class Home extends Component<IHomeprops, IHomestate> {
@@ -32,7 +33,7 @@ class Home extends Component<IHomeprops, IHomestate> {
                 minHeight: 280
               }}
             >
-              Content
+              <Summary />
             </Content>
           </Layout>
         </Layout>

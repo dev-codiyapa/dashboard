@@ -22,6 +22,14 @@
 .page-header{
   margin: 15px;
 }
+ul.header-left-section li{
+  list-style: none;
+  display: inline;
+}
+
+ul.header-left-section li:not(:first-child){
+  margin-left: 10px;
+}
 .header-right-section{
   float: right;
   margin-right: 50px;

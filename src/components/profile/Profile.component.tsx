@@ -14,13 +14,11 @@ const Profile: React.FC<IProfile> = () => {
         <span style={{ color: "#ccc", fontWeight: 700, fontSize: "12px" }}>
           Virat Kohli
         </span>
-        <Badge count={1}>
         <Avatar
           shape="circle"
           src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
           style={{ background: "#ddd", marginLeft: "10px" }}
         />
-        </Badge>
       </a>
     </>
   );
