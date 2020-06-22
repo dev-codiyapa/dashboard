@@ -12,11 +12,11 @@ const Profile: React.FC<IProfile> = () => {
       <a onClick={openProfile} className="header-profile">
         <Divider type="vertical"  />
         <span style={{ color: "#ccc", fontWeight: 700, fontSize: "12px" }}>
-          Virat Kohli
+          India
         </span>
         <Avatar
           shape="circle"
-          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          src={require("../../static/images/india.png")}
           style={{ background: "#ddd", marginLeft: "10px" }}
         />
       </a>

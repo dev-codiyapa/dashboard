@@ -1,3 +1,18 @@
-.home-page{
-    height: 100vh;
+.home-page {
+  height: 100vh;
+}
+.text-danger {
+  color: #cf1322;
+}
+.text-warning {
+  color: #faad14;
+}
+.text-success {
+  color: #7cb305;
+}
+.text-info {
+  color: #08979c;
+}
+.text-primary {
+  color: #0050b3;
 }

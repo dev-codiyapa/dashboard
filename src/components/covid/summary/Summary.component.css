@@ -1,3 +1,27 @@
-.confirm-case-box .ant-card{
+.confirm-case-box .ant-card,
+.active-case-box .ant-card,
+.recovered-case-box .ant-card,
+.death-case-box .ant-card {
   background: #ffccc7;
+  padding: 0;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
+}
+
+.confirm-case-box .ant-card {
+  background: rgba(255, 7, 58, 0.12549);
+  color: #fff;
+}
+.active-case-box .ant-card {
+  background: rgba(0, 123, 255, 0.0627451);
+}
+.recovered-case-box .ant-card {
+  background: rgba(40, 167, 69, 0.12549);
+}
+.death-case-box .ant-card {
+  background: rgba(32, 26, 162, 0.12549);
+}
+.title{
+    font-weight: 800;
 }

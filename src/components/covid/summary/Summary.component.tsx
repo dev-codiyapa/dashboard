@@ -57,32 +57,48 @@ class Summary extends React.Component<any, any> {
           <Col className="gutter-row" span={6}>
             <div className="confirm-case-box">
               <Card>
-                <p>Confirmed</p>
-                <p>{updatedResult && updatedResult.confirmed}</p>
+                <p className="title text-danger">Confirmed</p>
+                <p>
+                  {updatedResult &&
+                    updatedResult.confirmed &&
+                    updatedResult.confirmed.toLocaleString("en-in")}
+                </p>
               </Card>
             </div>
           </Col>
           <Col className="gutter-row" span={6}>
             <div className="active-case-box">
               <Card>
-              <p>Active</p>
-                <p>{updatedResult && updatedResult.active}</p>
+                <p className="title text-primary">Active</p>
+                <p>
+                  {updatedResult &&
+                    updatedResult.active &&
+                    updatedResult.active.toLocaleString("en-in")}
+                </p>
               </Card>
             </div>
           </Col>
           <Col className="gutter-row" span={6}>
             <div className="recovered-case-box">
               <Card>
-                  <p>Recovered</p>
-                <p>{updatedResult && updatedResult.Recovered}</p>
+                <p className="title text-success">Recovered</p>
+                <p>
+                  {updatedResult &&
+                    updatedResult.Recovered &&
+                    updatedResult.Recovered.toLocaleString("en-in")}
+                </p>
               </Card>
             </div>
           </Col>
           <Col className="gutter-row" span={6}>
-            <div className="recovered-case-box">
+            <div className="death-case-box">
               <Card>
-                  <p>Death</p>
-                <p>{updatedResult && updatedResult.deaths}</p>
+                <p className="title text-warning">Death</p>
+                <p>
+                  {updatedResult &&
+                    updatedResult.deaths &&
+                    updatedResult.deaths.toLocaleString("en-in")}
+                </p>
               </Card>
             </div>
           </Col>
