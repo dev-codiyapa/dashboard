@@ -1,9 +1,8 @@
 import React from "react";
 import { convertUTCDateToLocalDate } from "../../../utils/timeZoneCOnversion";
-import { Row, Col, Card } from "antd";
+import { Row, Col, Card, Alert } from "antd";
 import "./Summary.component.css";
-
-const style = { background: "#0092ff", padding: "8px 0" };
+import SummaryChart from "../../covid/summary/SummaryChart.component";
 
 class Summary extends React.Component<any, any> {
   constructor(props: any) {
@@ -12,6 +11,7 @@ class Summary extends React.Component<any, any> {
       data: null
     };
   }
+
   componentDidMount() {
     let date = convertUTCDateToLocalDate(new Date());
     let requiredDate = date.toISOString();
@@ -54,11 +54,18 @@ class Summary extends React.Component<any, any> {
     return (
       <>
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+          <Col span={24} style={{ marginTop: "20px", marginBottom: "20px" }}>
+            <Alert
+              message="If you have had COVID, and if you would like to share your story please write at survivor@covidindia.org. "
+              type="success"
+              showIcon
+            />
+          </Col>
           <Col className="gutter-row" span={6}>
             <div className="confirm-case-box">
               <Card>
                 <p className="title text-danger">Confirmed</p>
-                <p>
+                <p className="text-danger text-num">
                   {updatedResult &&
                     updatedResult.confirmed &&
                     updatedResult.confirmed.toLocaleString("en-in")}
@@ -70,7 +77,7 @@ class Summary extends React.Component<any, any> {
             <div className="active-case-box">
               <Card>
                 <p className="title text-primary">Active</p>
-                <p>
+                <p className="text-primary text-num">
                   {updatedResult &&
                     updatedResult.active &&
                     updatedResult.active.toLocaleString("en-in")}
@@ -82,7 +89,7 @@ class Summary extends React.Component<any, any> {
             <div className="recovered-case-box">
               <Card>
                 <p className="title text-success">Recovered</p>
-                <p>
+                <p className="text-success text-num">
                   {updatedResult &&
                     updatedResult.Recovered &&
                     updatedResult.Recovered.toLocaleString("en-in")}
@@ -93,8 +100,8 @@ class Summary extends React.Component<any, any> {
           <Col className="gutter-row" span={6}>
             <div className="death-case-box">
               <Card>
-                <p className="title text-warning">Death</p>
-                <p>
+                <p className="title text-warning">Deceased</p>
+                <p className="text-warning text-num">
                   {updatedResult &&
                     updatedResult.deaths &&
                     updatedResult.deaths.toLocaleString("en-in")}
@@ -102,6 +109,12 @@ class Summary extends React.Component<any, any> {
               </Card>
             </div>
           </Col>
+        </Row>
+        <Row
+          gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+          style={{ marginTop: "80px" }}
+        >
+          <SummaryChart />
         </Row>
       </>
     );

@@ -29,24 +29,21 @@ class SieBarMenu extends React.Component<any> {
           defaultSelectedKeys={["1"]}
           style={{ marginTop: "20px" }}
         >
-          <SubMenu key="sub1" icon={<BankOutlined />} title="Home">
-            <Menu.Item key="1">option1</Menu.Item>
-            <Menu.Item key="2">option2</Menu.Item>
-            <Menu.Item key="3">option3</Menu.Item>
-            <Menu.Item key="4">option4</Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub2" icon={<CopyOutlined />} title="Form">
-            <Menu.Item key="5">Basic form</Menu.Item>
-            <Menu.Item key="6">advance form</Menu.Item>
-            <Menu.Item key="7">Login form</Menu.Item>
-            <Menu.Item key="8">Register form</Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub3" icon={<UserOutlined />} title="Button">
-            <Menu.Item key="9">option1</Menu.Item>
-            <Menu.Item key="10">option2</Menu.Item>
-            <Menu.Item key="11">option3</Menu.Item>
-            <Menu.Item key="12">option4</Menu.Item>
-          </SubMenu>
+          <Menu.Item key="1" icon={<BankOutlined />} title="Home">
+            Summary
+          </Menu.Item>
+          <Menu.Item key="2" icon={<BankOutlined />} title="Home">
+            Detailed view
+          </Menu.Item>
+          <Menu.Item key="3" icon={<BankOutlined />} title="Home">
+            Others info
+          </Menu.Item>
+          <Menu.Item key="4" icon={<BankOutlined />} title="Home">
+            News
+          </Menu.Item>
+          <Menu.Item key="4" icon={<BankOutlined />} title="Home">
+            Contact Us
+          </Menu.Item>
         </Menu>
       </Sider>
     );
