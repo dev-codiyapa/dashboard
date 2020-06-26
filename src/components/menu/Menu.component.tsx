@@ -1,6 +1,11 @@
 import React from "react";
 import { Menu, Layout } from "antd";
-import { UserOutlined, BankOutlined, CopyOutlined } from "@ant-design/icons";
+import {
+  SnippetsOutlined,
+  TableOutlined,
+  PhoneOutlined,
+  SettingOutlined
+} from "@ant-design/icons";
 import "./Menu.component.css";
 
 const { Sider } = Layout;
@@ -21,7 +26,19 @@ class SieBarMenu extends React.Component<any> {
         className="sidebar"
       >
         <div className="logo">
-          {!this.props.collapsed ? <p>Covid-19 Dashboard</p> : null}
+          {!this.props.collapsed ? (
+            <>
+              <span></span>
+              <img
+                src={require("../../static/images/virus.svg")}
+                width="20px"
+                style={{ float: "left" }}
+              />{" "}
+              <span>Covid-19 Dashboard</span>{" "}
+            </>
+          ) : (
+            <img src={require("../../static/images/virus.svg")} width="25px" />
+          )}
         </div>
         <Menu
           theme="dark"
@@ -29,19 +46,16 @@ class SieBarMenu extends React.Component<any> {
           defaultSelectedKeys={["1"]}
           style={{ marginTop: "20px" }}
         >
-          <Menu.Item key="1" icon={<BankOutlined />} title="Home">
+          <Menu.Item key="1" icon={<SnippetsOutlined />} title="Summary">
             Summary
           </Menu.Item>
-          <Menu.Item key="2" icon={<BankOutlined />} title="Home">
+          <Menu.Item key="2" icon={<TableOutlined />} title="Deatils">
             Detailed view
           </Menu.Item>
-          <Menu.Item key="3" icon={<BankOutlined />} title="Home">
+          <Menu.Item key="3" icon={<SettingOutlined />} title="others">
             Others info
           </Menu.Item>
-          <Menu.Item key="4" icon={<BankOutlined />} title="Home">
-            News
-          </Menu.Item>
-          <Menu.Item key="4" icon={<BankOutlined />} title="Home">
+          <Menu.Item key="4" icon={<PhoneOutlined />} title="contactUs">
             Contact Us
           </Menu.Item>
         </Menu>

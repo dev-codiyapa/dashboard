@@ -12,6 +12,8 @@
   height: 45px;
   text-transform: uppercase;
   background: #222;
+  padding: 10px;
+  font-size: 12px;
 }
 .logo p {
   padding-top: 12px;
