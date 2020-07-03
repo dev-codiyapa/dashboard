@@ -7,6 +7,7 @@ import {
   SettingOutlined
 } from "@ant-design/icons";
 import "./Menu.component.css";
+import { Link } from "react-router-dom";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -47,16 +48,16 @@ class SieBarMenu extends React.Component<any> {
           style={{ marginTop: "20px" }}
         >
           <Menu.Item key="1" icon={<SnippetsOutlined />} title="Summary">
-            Summary
+            <Link to="/">Summary</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<TableOutlined />} title="Deatils">
-            Detailed view
+            <Link to="detailed_view">Detailed view</Link>
           </Menu.Item>
           <Menu.Item key="3" icon={<SettingOutlined />} title="others">
-            Others info
+            <Link to="others_view">Others info</Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<PhoneOutlined />} title="contactUs">
-            Contact Us
+            <Link to="contact_us">Contact Us</Link>
           </Menu.Item>
         </Menu>
       </Sider>

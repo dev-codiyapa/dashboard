@@ -1,2 +1,2 @@
-export interface ICovidTableViewProps{}
-export interface ICovidTableViewState{}
+export interface ICovidTableViewProps {}
+export interface ICovidTableViewState {}
