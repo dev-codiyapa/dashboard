@@ -4,4 +4,8 @@
     color: #ffffff;
     font-size: 12px;
     font-weight: 600;
+    text-align: center;
+  }
+  .pf-editable-table .ant-table-tbody > tr > td{
+    text-align: center;
   }

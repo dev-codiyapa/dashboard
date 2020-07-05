@@ -1,2 +1,4 @@
 export interface ICovidTableViewProps {}
-export interface ICovidTableViewState {}
+export interface ICovidTableViewState {
+  data: Array<any>;
+}
