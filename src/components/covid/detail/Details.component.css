@@ -1,0 +1,7 @@
+.pf-editable-table .ant-table-thead>tr>th {
+    background: #002950 !important;
+    padding: 15px 5px 12px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+  }

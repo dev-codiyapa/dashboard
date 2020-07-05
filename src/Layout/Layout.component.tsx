@@ -21,10 +21,6 @@ class PageLayout extends Component<ILayoutprops, ILayoutstate> {
     });
   };
 
-  componentDidMount() {
-    console.log("supplied component is ===>", this.props.componentName);
-  }
-
   render() {
     return (
       <>

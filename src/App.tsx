@@ -8,7 +8,6 @@ import CovidDetailsReport from "./pages/details/Details.component";
 
 function App() {
   return (
-    <>
       <Router>
         <Switch>
           <Route path="/" component={Home} exact={true} />
@@ -19,7 +18,6 @@ function App() {
           />
         </Switch>
       </Router>
-    </>
   );
 }
 

@@ -9,10 +9,11 @@ import { Layout, Row, Col, Avatar } from "antd";
 import Search from "../../components/search/Search.component";
 import Profile from "../../components/profile/Profile.component";
 import Profilenofitication from "../../components/notfication/Notification.component";
+import { IPageHeaderProps } from "./interfaces";
 
 const { Header } = Layout;
 
-const PageHeader: React.FC<any> = (props: any) => {
+const PageHeader: React.FC<IPageHeaderProps> = (props: any) => {
   return (
     <>
       <Header
@@ -23,7 +24,7 @@ const PageHeader: React.FC<any> = (props: any) => {
           <Col className="gutter-row" span={12}>
             <ul className="header-left-section">
               <li>
-                <a className="trigger" onClick={props.toggle} href="#">
+                <a className="trigger" onClick={props.toggle}>
                   {props.collapsed ? (
                     <MenuUnfoldOutlined />
                   ) : (

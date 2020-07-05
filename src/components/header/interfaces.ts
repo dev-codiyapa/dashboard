@@ -1,4 +1,4 @@
-export interface IContentHeaderProps {
-  tabName: string;
+export interface IPageHeaderProps {
+  toggle: ()=> any;
+  collapsed: boolean
 }
-export interface IContentHeaderState {}
