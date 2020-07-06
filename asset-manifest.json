@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.e59cf10c.chunk.css",
-    "main.js": "/dashboard/static/js/main.a48f8029.chunk.js",
-    "main.js.map": "/dashboard/static/js/main.a48f8029.chunk.js.map",
-    "runtime-main.js": "/dashboard/static/js/runtime-main.f8aab744.js",
-    "runtime-main.js.map": "/dashboard/static/js/runtime-main.f8aab744.js.map",
-    "static/css/2.a2026422.chunk.css": "/dashboard/static/css/2.a2026422.chunk.css",
-    "static/js/2.59a22cbc.chunk.js": "/dashboard/static/js/2.59a22cbc.chunk.js",
-    "static/js/2.59a22cbc.chunk.js.map": "/dashboard/static/js/2.59a22cbc.chunk.js.map",
-    "index.html": "/dashboard/index.html",
-    "precache-manifest.e7c02259e606bf5383bea5c6bf44470a.js": "/dashboard/precache-manifest.e7c02259e606bf5383bea5c6bf44470a.js",
-    "service-worker.js": "/dashboard/service-worker.js",
-    "static/css/2.a2026422.chunk.css.map": "/dashboard/static/css/2.a2026422.chunk.css.map",
-    "static/css/main.e59cf10c.chunk.css.map": "/dashboard/static/css/main.e59cf10c.chunk.css.map",
-    "static/js/2.59a22cbc.chunk.js.LICENSE.txt": "/dashboard/static/js/2.59a22cbc.chunk.js.LICENSE.txt",
-    "static/media/india.png": "/dashboard/static/media/india.d51ec02e.png",
-    "static/media/virus.svg": "/dashboard/static/media/virus.4d3a07a1.svg"
+    "main.css": "./static/css/main.e59cf10c.chunk.css",
+    "main.js": "./static/js/main.17528f9b.chunk.js",
+    "main.js.map": "./static/js/main.17528f9b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.46185c08.js",
+    "runtime-main.js.map": "./static/js/runtime-main.46185c08.js.map",
+    "static/css/2.a2026422.chunk.css": "./static/css/2.a2026422.chunk.css",
+    "static/js/2.0d589815.chunk.js": "./static/js/2.0d589815.chunk.js",
+    "static/js/2.0d589815.chunk.js.map": "./static/js/2.0d589815.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.2fe76802ddcb913d4865bc1b52b8dd3b.js": "./precache-manifest.2fe76802ddcb913d4865bc1b52b8dd3b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.a2026422.chunk.css.map": "./static/css/2.a2026422.chunk.css.map",
+    "static/css/main.e59cf10c.chunk.css.map": "./static/css/main.e59cf10c.chunk.css.map",
+    "static/js/2.0d589815.chunk.js.LICENSE.txt": "./static/js/2.0d589815.chunk.js.LICENSE.txt",
+    "static/media/india.png": "./static/media/india.d51ec02e.png",
+    "static/media/virus.svg": "./static/media/virus.4d3a07a1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8aab744.js",
+    "static/js/runtime-main.46185c08.js",
     "static/css/2.a2026422.chunk.css",
-    "static/js/2.59a22cbc.chunk.js",
+    "static/js/2.0d589815.chunk.js",
     "static/css/main.e59cf10c.chunk.css",
-    "static/js/main.a48f8029.chunk.js"
+    "static/js/main.17528f9b.chunk.js"
   ]
 }
