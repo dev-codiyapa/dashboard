@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/projectboard/static/css/main.e59cf10c.chunk.css",
-    "main.js": "/projectboard/static/js/main.44dc0a0d.chunk.js",
-    "main.js.map": "/projectboard/static/js/main.44dc0a0d.chunk.js.map",
-    "runtime-main.js": "/projectboard/static/js/runtime-main.e65b68c2.js",
-    "runtime-main.js.map": "/projectboard/static/js/runtime-main.e65b68c2.js.map",
-    "static/css/2.a2026422.chunk.css": "/projectboard/static/css/2.a2026422.chunk.css",
-    "static/js/2.39c1239d.chunk.js": "/projectboard/static/js/2.39c1239d.chunk.js",
-    "static/js/2.39c1239d.chunk.js.map": "/projectboard/static/js/2.39c1239d.chunk.js.map",
-    "index.html": "/projectboard/index.html",
-    "precache-manifest.b558c6e26b29122bdcf0c23406c18441.js": "/projectboard/precache-manifest.b558c6e26b29122bdcf0c23406c18441.js",
-    "service-worker.js": "/projectboard/service-worker.js",
-    "static/css/2.a2026422.chunk.css.map": "/projectboard/static/css/2.a2026422.chunk.css.map",
-    "static/css/main.e59cf10c.chunk.css.map": "/projectboard/static/css/main.e59cf10c.chunk.css.map",
-    "static/js/2.39c1239d.chunk.js.LICENSE.txt": "/projectboard/static/js/2.39c1239d.chunk.js.LICENSE.txt",
-    "static/media/india.png": "/projectboard/static/media/india.d51ec02e.png",
-    "static/media/virus.svg": "/projectboard/static/media/virus.4d3a07a1.svg"
+    "main.css": "/dashboard/static/css/main.e59cf10c.chunk.css",
+    "main.js": "/dashboard/static/js/main.a48f8029.chunk.js",
+    "main.js.map": "/dashboard/static/js/main.a48f8029.chunk.js.map",
+    "runtime-main.js": "/dashboard/static/js/runtime-main.f8aab744.js",
+    "runtime-main.js.map": "/dashboard/static/js/runtime-main.f8aab744.js.map",
+    "static/css/2.a2026422.chunk.css": "/dashboard/static/css/2.a2026422.chunk.css",
+    "static/js/2.59a22cbc.chunk.js": "/dashboard/static/js/2.59a22cbc.chunk.js",
+    "static/js/2.59a22cbc.chunk.js.map": "/dashboard/static/js/2.59a22cbc.chunk.js.map",
+    "index.html": "/dashboard/index.html",
+    "precache-manifest.e7c02259e606bf5383bea5c6bf44470a.js": "/dashboard/precache-manifest.e7c02259e606bf5383bea5c6bf44470a.js",
+    "service-worker.js": "/dashboard/service-worker.js",
+    "static/css/2.a2026422.chunk.css.map": "/dashboard/static/css/2.a2026422.chunk.css.map",
+    "static/css/main.e59cf10c.chunk.css.map": "/dashboard/static/css/main.e59cf10c.chunk.css.map",
+    "static/js/2.59a22cbc.chunk.js.LICENSE.txt": "/dashboard/static/js/2.59a22cbc.chunk.js.LICENSE.txt",
+    "static/media/india.png": "/dashboard/static/media/india.d51ec02e.png",
+    "static/media/virus.svg": "/dashboard/static/media/virus.4d3a07a1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e65b68c2.js",
+    "static/js/runtime-main.f8aab744.js",
     "static/css/2.a2026422.chunk.css",
-    "static/js/2.39c1239d.chunk.js",
+    "static/js/2.59a22cbc.chunk.js",
     "static/css/main.e59cf10c.chunk.css",
-    "static/js/main.44dc0a0d.chunk.js"
+    "static/js/main.a48f8029.chunk.js"
   ]
 }
