@@ -33,7 +33,7 @@ const PageHeader: React.FC<IPageHeaderProps> = (props: any) => {
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href={process.env.PUBLIC_URL + "/"}>
                   <Avatar size="small" icon={<HomeOutlined />} />
                 </a>
               </li>

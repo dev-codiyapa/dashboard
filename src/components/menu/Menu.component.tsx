@@ -48,16 +48,16 @@ class SieBarMenu extends React.Component<any> {
           style={{ marginTop: "20px" }}
         >
           <Menu.Item key="1" icon={<SnippetsOutlined />} title="Summary">
-            <Link to="/">Summary</Link>
+            <Link to={process.env.PUBLIC_URL + "/"}>Summary</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<TableOutlined />} title="Deatils">
-            <Link to="detailed_view">Detailed view</Link>
+            <Link to={process.env.PUBLIC_URL + "/detailed_view"}>Detailed view</Link>
           </Menu.Item>
           <Menu.Item key="3" icon={<SettingOutlined />} title="others">
-            <Link to="others_view">Others info</Link>
+            <Link to={process.env.PUBLIC_URL + "/contact_us"}>Others info</Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<PhoneOutlined />} title="contactUs">
-            <Link to="contact_us">Contact Us</Link>
+            <Link to={process.env.PUBLIC_URL + "/contact_us"}>Contact Us</Link>
           </Menu.Item>
         </Menu>
       </Sider>

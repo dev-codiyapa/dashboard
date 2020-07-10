@@ -88,7 +88,7 @@ class CovidTableView extends React.Component<
   }
   componentDidMount() {
     console.log("call API to get data state wise");
-    fetch("http://covid19-india-adhikansh.herokuapp.com/states")
+    fetch("https://covid19-india-adhikansh.herokuapp.com/states")
       .then(response => {
         return response.json();
       })

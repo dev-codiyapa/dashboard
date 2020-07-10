@@ -40,24 +40,22 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <>
         {!isSmallScreenWith ? (
-          <HashRouter basename='/'>
-            <Router>
-              <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route path="/detailed_view">
-                  <CovidDetailsReport />
-                </Route>
-                <Route path="/contact_us">
-                  <ContactUs />
-                </Route>
-                <Route path="/others_view">
-                  <ContactUs />
-                </Route>
-              </Switch>
-            </Router>
-          </HashRouter>
+          <Router basename="/">
+            <Switch>
+              <Route exact path={process.env.PUBLIC_URL + "/"}>
+                <Home />
+              </Route>
+              <Route path={process.env.PUBLIC_URL + "/detailed_view"}>
+                <CovidDetailsReport />
+              </Route>
+              <Route path={process.env.PUBLIC_URL + "/contact_us"}>
+                <ContactUs />
+              </Route>
+              <Route path={process.env.PUBLIC_URL + "/contact_us"}>
+                <ContactUs />
+              </Route>
+            </Switch>
+          </Router>
         ) : (
           <>
             <h2
@@ -65,7 +63,7 @@ class App extends React.Component<IAppProps, IAppState> {
               style={{ marginTop: "300px" }}
             >
               {" "}
-              Cureently, we are not supporting small screen devices.
+              Cureently, Not supported in small screen devices.
             </h2>
             <h3 className="text-center text-warning">
               Please use desktop to view proper results.{" "}
