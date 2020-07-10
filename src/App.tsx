@@ -2,7 +2,13 @@ import React from "react";
 import "./App.css";
 import Home from "./pages/home/Home.component";
 import "antd/dist/antd.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  HashRouter,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import CovidDetailsReport from "./pages/details/Details.component";
 import ContactUs from "./components/contact-us/ContactUs.component";
 interface IAppState {
@@ -34,22 +40,24 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <>
         {!isSmallScreenWith ? (
-          <Router>
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/detailed_view">
-                <CovidDetailsReport />
-              </Route>
-              <Route path="/contact_us">
-                <ContactUs />
-              </Route>
-              <Route path="/others_view">
-                <ContactUs />
-              </Route>
-            </Switch>
-          </Router>
+          <HashRouter basename='/'>
+            <Router>
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/detailed_view">
+                  <CovidDetailsReport />
+                </Route>
+                <Route path="/contact_us">
+                  <ContactUs />
+                </Route>
+                <Route path="/others_view">
+                  <ContactUs />
+                </Route>
+              </Switch>
+            </Router>
+          </HashRouter>
         ) : (
           <>
             <h2
